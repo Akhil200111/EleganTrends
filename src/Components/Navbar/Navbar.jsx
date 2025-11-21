@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./Navbar.scss";
-import logo from "../../assets/Elegantrends_log0.png";
+import logo from "../../assets/Logo.png";
 import { IoIosSearch, IoIosArrowDown } from "react-icons/io";
 import { FaCartShopping, FaRegUser  } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
