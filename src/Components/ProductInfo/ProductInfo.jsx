@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Products from '../../Data/Products.js';
-import './Productinfo.scss'
+import './ProductInfo.scss'
 import { FaStar, FaStarHalfAlt} from "react-icons/fa";
 
 const Productinfo = () => {
