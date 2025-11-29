@@ -3,17 +3,20 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { Provider } from 'react-redux'
-import { store } from './Redux/store.js'
+import { persistor, store } from './Redux/store.js'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CartPage from './Pages/CartPage.jsx'
 import AboutPage from './Pages/AboutPage.jsx'
 import DynamicProduct from './Pages/DynamicProduct.jsx'
+import { PersistGate } from 'redux-persist/integration/react'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
 
-      <BrowserRouter>
+      <PersistGate persistor={persistor}>
+
+        <BrowserRouter>
       <Routes >
         <Route path='/' element={<App />}></Route>
         <Route path='/cart' element={<CartPage />}></Route>
@@ -22,6 +25,7 @@ createRoot(document.getElementById('root')).render(
       </Routes>
       </BrowserRouter>
 
+      </PersistGate>
 
 
     </Provider>
