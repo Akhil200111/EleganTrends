@@ -1,0 +1,216 @@
+@use '../../globalsass.scss' as *;
+
+.popularCollections{
+//   padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+//   align-items: self-start;
+
+
+  
+  .heading{
+    display: flex;
+    // background: white;
+    border: none;
+    align-items: center;
+    justify-content: space-around;
+     gap: 35rem; 
+    @include respond(xxl) {
+              gap: 35rem; 
+            }
+      @include respond(xl) {
+              gap: 15rem; 
+            }
+      @include respond(lg) {
+              gap: 6rem; 
+            }
+      @include respond(md) {
+              gap: 4rem; 
+              font-size: 30px;
+              margin-left:20px;
+            }
+     
+    
+    h1{
+        @include mainHeading(black);
+        font-size: 45px;
+        margin-left: 40px;
+        
+        span{
+            @include font-molle-regular-italic(700);
+        }
+    }
+
+    button{
+        margin-right: 40px;
+        display: flex;
+        background: none;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        @include font-nunito;
+        font-weight: 500;
+        gap: 12px;
+        font-size: 16px;
+    }
+  }
+ 
+    
+
+    .populardetails{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         gap: 30rem;
+          @include respond(xxl) {
+               gap: 25rem;
+          }
+          @include respond(xl) {
+              gap: 14rem; 
+            }
+          @include respond(lg) {
+              gap: 10rem; 
+            }
+          @include respond(md) {
+              gap: 8rem; 
+            }
+          @include respond(sm) {
+              gap: 4rem; 
+              flex-direction: column;
+            }
+     
+         margin-left: 60px;
+         width: max-content;
+         
+         .popularinfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            span{
+                padding: 8px 10px;
+                color: rgba(46, 43, 43, 0.751);
+                @include font-nunito(600);
+                font-size: larger;
+
+                &.active{
+                    color: black;
+                    
+                }
+            }
+         }
+
+         
+
+         .popularimage{
+            margin-right: 80px;
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mainImg{
+                background: linear-gradient(to bottom,rgb(146, 209, 231),rgb(149, 200, 217),white);
+                border-radius: 25px;
+                position: relative;  
+                z-index: 5;
+                
+            img{
+                height: 500px;   
+                width: 550px;
+                border-radius: 25px;
+                 @include respond(xl) {
+                  height: 400px;
+                  width: 425px;
+                   
+                  }
+               @include respond(md) {
+                    height: 270px;
+                    width: 300px;
+                  }
+               @include respond(sm) {
+                    height: 350px;
+                    width: 375px;
+                  }
+     
+            }
+            .img{
+                position: absolute;
+                z-index: 10;
+                background: rgba(34, 34, 34, 0.727);
+                border-radius: 25px;
+                top: 13rem;
+                right: .8rem;
+                 @include respond(xl) {
+                    top: 8rem;
+                    right: 1rem;
+                 }
+                 @include respond(md) {
+                    top: 8rem;
+                    right: 1rem;
+                 }
+                 @include respond(sm) {
+                    top: 8rem;
+                    right: 1rem;
+                  }
+               
+                display: flex;
+                
+                .img1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin:10px;
+                    border-radius: 25px;
+                    background: linear-gradient(to bottom,rgb(146, 209, 231),rgb(149, 200, 217),white);
+                    overflow: hidden;
+                    img{
+                    height: 240px; 
+                    width: 240px; 
+                     @include respond(xl) {
+                        height: 165px;
+                        width: 165px;
+                        }
+                     @include respond(md) {
+                          height: 100px;
+                          width: 100px;
+                        } 
+                     @include respond(sm) {
+                          height: 150px;
+                          width: 150px;
+                        } 
+                        
+                }
+                }
+                .img2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin:10px;
+                    border-radius: 25px;
+                    background: linear-gradient(to bottom,rgb(146, 209, 231),rgb(149, 200, 217),white);
+                    overflow: hidden;
+                    img{
+                    height: 240px; 
+                    width: 240px; 
+                    @include respond(xl) {
+                        height: 165px;
+                        width: 165px;
+                        }
+                     @include respond(md) {
+                          height: 100px;
+                          width: 100px;
+                        } 
+                        @include respond(sm) {
+                          height: 150px;
+                          width: 150px;
+                        } 
+                }
+                }
+                
+            }
+            }
+         }
+
+
+    }
+}
