@@ -43,14 +43,14 @@ const Footer = () => {
           <div className="subc">
             <h2 className="">Get in touch</h2>
             <div className="">
-              <p>+91 7034016568</p>
-              <p>pranavmn7034@gmail.com</p>
+              <p>+91 6238771217</p>
+              <p>aakhilp1@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
       <p className="bottom">
-        Copyright 2025 © Pranavmn.dev All Right Reserved.
+        Copyright 2025 © akhil.dev All Right Reserved.
       </p>
     </footer>
   );

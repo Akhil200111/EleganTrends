@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer'
 import Trending from './Components/Trends/Trending'
 import { ThemeProvider } from './Context/ThemeContext'
 import { Toaster } from 'react-hot-toast'
+import PopularCollection from './Components/PopularCollection/PopularCollection'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Navbar />
     <Hero />
     <Trending />
+    <PopularCollection />
     <Footer />
    </ThemeProvider>
   )
