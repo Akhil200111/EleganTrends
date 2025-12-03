@@ -84,10 +84,22 @@
          
          .popularinfo{
             display: flex;
+            justify-content: space-between;
+            gap: 15px;
+
+            .indicators{
+              width: 2px;
+              button{
+                height: 45px;
+                &.active{
+                  border-color: aqua;
+                }
+              }
+            }
+           .content{
+            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: left;
-            span{
+             span{
                 padding: 8px 10px;
                 color: rgba(46, 43, 43, 0.751);
                 @include font-nunito(600);
@@ -97,7 +109,12 @@
                     color: black;
                     
                 }
+
+                span{
+                  font-size: small;
+                }
             }
+           }
          }
 
          

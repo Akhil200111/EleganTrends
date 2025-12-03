@@ -48,15 +48,27 @@ const PopularCollection = () => {
         <div className="populardetails">
             <div className="popularinfo">
 
-                {Categories.map((category, index) => (
+                 <div className='indicators'>                        
+                     {
+                         Categories.map((category, index) => (
+                             <button key={index}
+                               className={selectedCategory === category ? "active" : ""}
+                             ></button>
+                         ))
+                     }
+                </div>
+
+                <div className="content">
+                    {Categories.map((category, index) => (
                     <span 
                     key={index}
                     className={selectedCategory === category ? "active" : ""}
                     onClick={() => setSelectedCategory(category)}
                     >
-                        {category}({category.length})
+                        {category} <span>({category.length})</span>
                     </span>
                 ))}
+                </div>
                
             </div>
             <div className="popularimage">
