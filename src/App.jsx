@@ -6,6 +6,7 @@ import Trending from './Components/Trends/Trending'
 import { ThemeProvider } from './Context/ThemeContext'
 import { Toaster } from 'react-hot-toast'
 import PopularCollection from './Components/PopularCollection/PopularCollection'
+import Comfort from './Components/ComfortProducts/Comfort'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Hero />
     <Trending />
     <PopularCollection />
+    <Comfort />
     <Footer />
    </ThemeProvider>
   )

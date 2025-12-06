@@ -5,6 +5,16 @@ import Apple2 from '../assets/Products/AppleEarpode2.png'
 import Apple3 from '../assets/Products/AppleEarpode3.png'
 import Apple4 from '../assets/Products/AppleEarpode4.png'
 
+import AnalogWatch1 from '../assets/Products/analogwatch1.png'
+import AnalogWatch2 from '../assets/Products/analogwatch2.png'
+import AnalogWatch3 from '../assets/Products/analogwatch3.png'
+
+import Backpack1 from '../assets/Products/backpack1.png'
+import Backpack2 from '../assets/Products/backpack2.png'
+import Backpack3 from '../assets/Products/backpack3.png'
+import Backpack4 from '../assets/Products/backpack4.png'
+
+
 import Caps from '../assets/Products/Caps.png';
 import Tshirt from '../assets/Products/Tshirt.png';
 import Hoodies from '../assets/Products/hoodies.png'
@@ -20,8 +30,6 @@ import FlipFlops from '../assets/Products/flipflops.png'
 import StrawHat from '../assets/Products/strawhat.png'
 
 import Sunglass from '../assets/Products/sunglass.png'
-import AnalogWatch from '../assets/Products/analogwatch.png'
-import Backpack from '../assets/Products/backpack.png'
 import Bracelet from '../assets/Products/bracelet.png'
 
 import Sneakers from "../assets/Products/sneakers.png"
@@ -201,7 +209,7 @@ const Products = [
     description: "A classic analog wrist watch with a high-quality leather strap and stainless steel case. Offers elegance, durability, and precise timekeeping.",
     price: 2999,
     offerPrice: 2499,
-    image: [AnalogWatch],
+    image: [AnalogWatch1, AnalogWatch2, AnalogWatch3],
     category: "Accessories",
     date: Date.now(),
     __v: 0
@@ -213,7 +221,7 @@ const Products = [
     description: "A strong and spacious travel backpack built with premium materials. Includes multiple compartments for laptops, accessories, and daily essentials.",
     price: 3499,
     offerPrice: 2899,
-    image: [Backpack],
+    image: [Backpack1, Backpack2, Backpack3, Backpack4],
     category: "Accessories",
     date: Date.now(),
     __v: 0
